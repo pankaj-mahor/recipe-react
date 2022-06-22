@@ -1,5 +1,6 @@
 import styled from 'styled-components'  
 import styledComponents from 'styled-components'
+import { NavLink } from "react-router-dom";
 
 export const Wrapper = styled.div`
   margin: 4rem 0rem;
@@ -28,7 +29,7 @@ export const Card = styled.div`
     color:#fff;
     text-align:center;
     font-weight:600;
-    fontsize:1rem;
+    font-size:1rem;
     height:20%;
     display:flex;
     justify-content:center;
@@ -75,3 +76,41 @@ export const CardCuisine = styled.div`
     padding:1rem;
   }
 `;
+
+
+
+export const SLink= styled(NavLink)`
+  display:flex;
+  justify-content:center;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 50%;
+  margin-right: 1rem;
+  text-decoration: none;
+  width:6rem;
+  height: 6rem;
+  cursor: pointer;
+  transform: scale(0.8);
+  background:linear-gradient(35deg , #494949 , #313131);
+  h4{
+    color: #fff;
+    font-size: 0.9rem;
+  }
+  svg{
+    color: #fff;
+    font-size: 1.8rem;
+    margin-bottom: 0.2rem;
+  }
+  &.active{
+    background: linear-gradient(to right , #f27121 , #e94057);
+
+    svg{
+      color: #fff;
+
+    }
+    h4{
+      color: #fff;
+    }
+  }
+
+`
