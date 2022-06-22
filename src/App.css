@@ -1,4 +1,9 @@
-.App {
-  max-width: 1200px;
-  margin: auto;
+/* .App { */
+/* max-width: 1200px; */
+/* margin: auto; */
+/* } */
+@media (min-width: 1020px) {
+  .App {
+    margin: 0 10%;
+  }
 }

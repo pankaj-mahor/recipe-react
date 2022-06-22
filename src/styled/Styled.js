@@ -46,3 +46,32 @@ export const Gradient = styled.div`
   background: linear-gradient(rgba(0,0,0,1), rgba(0,0,0,0.5));
   
 `;
+
+export const List = styled.div`
+  display:flex;
+  justify-content:center;
+  margin: 2rem 0;
+
+`
+
+export const Grid = styled.div`
+  display:grid;
+  grid-gap:1.5rem;
+  grid-template-columns: repeat(auto-fit , minmax(min(18rem , 100%) , 1fr))
+`;
+
+
+export const CardCuisine = styled.div`
+  img{
+    width:100%;
+    border-radius: 1rem;
+
+  }
+  a{
+    text-decoration:none;
+  }
+  h4{
+    text-align:center;
+    padding:1rem;
+  }
+`;
