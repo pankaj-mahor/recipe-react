@@ -14,6 +14,7 @@ const Search = () => {
         e.preventDefault();
         
         navigate('/searched/' + input)
+        // setInput('')
     }
   return (
     <FormStyle onSubmit={submitHandler}>
