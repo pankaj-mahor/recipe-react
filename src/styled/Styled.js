@@ -39,7 +39,6 @@ export const Card = styled.div`
   
   }
 `;
-
 export const Gradient = styled.div`
   z-index:3;
   position:absolute;
@@ -47,21 +46,20 @@ export const Gradient = styled.div`
   background: linear-gradient(rgba(0,0,0,1), rgba(0,0,0,0.5));
   
 `;
-
 export const List = styled.div`
   display:flex;
   justify-content:center;
   margin: 2rem 0;
 
 `
-
 export const Grid = styled.div`
   display:grid;
   grid-gap:1.5rem;
   grid-template-columns: repeat(auto-fit , minmax(min(18rem , 100%) , 1fr))
 `;
 
-
+//used In Categories
+////USED IN nVLinK
 export const CardCuisine = styled.div`
   img{
     width:100%;
@@ -76,9 +74,6 @@ export const CardCuisine = styled.div`
     padding:1rem;
   }
 `;
-
-
-
 export const SLink= styled(NavLink)`
   display:flex;
   justify-content:center;
@@ -113,4 +108,30 @@ export const SLink= styled(NavLink)`
     }
   }
 
+`
+
+export const FormStyle = styled.form`
+  margin: 2rem 20%;
+  div{
+    position: relative;
+    width: 100%;
+
+  }
+  input{
+    border: none;
+    background: linear-gradient(35deg ,#494949 ,#313131);
+    font-size: 1.2rem;
+    color: #fff;
+    padding: 1rem 3rem;
+    border-radius: 5rem;
+    outline: none;
+    width: 100%;
+  }
+  svg{
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translate(100% , -50%);
+  }
 `
