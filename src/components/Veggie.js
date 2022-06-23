@@ -34,7 +34,7 @@ const Veggie = () => {
       const data = await res.json();
       localStorage.setItem('veggie' , JSON.stringify(data.recipes))
       setVeggies(data.recipes);  
-      console.log("From Veggie" + data.recipes);  
+    //   console.log("From Veggie" + data.recipes);  
     }
   }
   return (

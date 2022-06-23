@@ -37,7 +37,7 @@ const Popular = () => {
       const data = await res.json();
       localStorage.setItem('popular' , JSON.stringify(data.recipes))
       setPopularRecipe(data.recipes);  
-      console.log(data.recipes);  
+      // console.log(data.recipes);  
     }
   }
   return (

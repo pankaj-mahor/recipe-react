@@ -11,7 +11,7 @@ const SearchedPage = () => {
          const api= "https://api.spoonacular.com/recipes/complexSearch";
         const res =  await fetch(`${api}?apiKey=${process.env.REACT_APP_FOOD_API_KEY}&query=${name}`)
         const data = await res.json();
-        console.log(data.results)
+        // console.log(data.results)
         setSearchedRecipe(data.results)
         }
 

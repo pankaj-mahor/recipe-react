@@ -13,7 +13,7 @@ const Cuisine = () => {
          const api= "https://api.spoonacular.com/recipes/complexSearch";
         const res =  await fetch(`${api}?apiKey=${process.env.REACT_APP_FOOD_API_KEY}&cuisine=${name}`)
         const data = await res.json();
-        console.log(data.results)
+        // console.log(data.results)
         setCuisine(data.results)
         }
 
@@ -28,7 +28,13 @@ const Cuisine = () => {
    }, [cuisineType.type])
 
   return (
-    <Grid>
+    <Grid
+    
+        animate={{opacity:1}}
+        initial={{opacity:0}}
+        exit={{opacity:0}}
+        transition={{duration:0.5}}
+    >
 
     {cuisine.map((item) => {
         return (

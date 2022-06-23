@@ -22,7 +22,7 @@ const Recipe = () => {
       `${api}?apiKey=${process.env.REACT_APP_FOOD_API_KEY}`
     );
     const data = await res.json();
-    console.log(data);
+    // console.log(data);
     setDetails(data);
   };
 

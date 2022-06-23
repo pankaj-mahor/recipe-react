@@ -1,7 +1,7 @@
 import styled from 'styled-components'  
 import styledComponents from 'styled-components'
 import { NavLink } from "react-router-dom";
-
+import { motion } from 'framer-motion';
 export const Wrapper = styled.div`
   margin: 4rem 0rem;
 `;
@@ -52,7 +52,7 @@ export const List = styled.div`
   margin: 2rem 0;
 
 `
-export const Grid = styled.div`
+export const Grid = styled(motion.div)`
   display:grid;
   grid-gap:1.5rem;
   grid-template-columns: repeat(auto-fit , minmax(min(18rem , 100%) , 1fr))
