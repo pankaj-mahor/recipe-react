@@ -10,7 +10,7 @@ import '@splidejs/react-splide/css/sea-green';
 
 // or only core styles
 import '@splidejs/react-splide/css/core';
-
+import { Link } from 'react-router-dom';
 //Custom Styled
 import { Wrapper , Card , Gradient } from '../styled/Styled';
 const Popular = () => {
@@ -56,11 +56,13 @@ const Popular = () => {
             return (  
               <SplideSlide 
               key={recipe.id}>
+              <Link to={"/recipe/" + recipe.id}>
                 <Card >
                   <Gradient />                  
                   <p>{recipe.title}</p>
                   <img src={recipe.image} alt={recipe.title}></img>
                 </Card>
+                </Link>
               </SplideSlide>
             );
           })}

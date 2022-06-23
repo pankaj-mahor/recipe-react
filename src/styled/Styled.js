@@ -109,7 +109,6 @@ export const SLink= styled(NavLink)`
   }
 
 `
-
 export const FormStyle = styled.form`
   margin: 2rem 20%;
   div{
@@ -134,4 +133,40 @@ export const FormStyle = styled.form`
     left: 0%;
     transform: translate(100% , -50%);
   }
+`
+
+//recipe Details Page
+export const DetailWrapper = styled.div`
+
+  margin-top: 10rem;
+  margin-bottom: 5rem;
+  display: flex;
+  .active{
+    background: linear-gradient(35deg , #494949 , #313131);
+    color: #fff;
+  }
+  h2{
+    margin-bottom: 2rem;
+  }
+  li{
+    font-size: 1.2rem;
+    line-height: 2.5rem;
+  }
+  ul{
+    margin-top: 2rem;
+  }
+`
+
+export const Button = styled.button`
+  padding: 1rem 2rem;
+  color: #313131;
+  background: #fff;
+  border: 2px solid black;
+  margin-right: 2rem;
+  font-family: 600;
+  cursor : pointer;
+` 
+
+export const Info = styled.div`
+  margin-left: 5rem;
 `

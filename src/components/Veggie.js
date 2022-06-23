@@ -9,6 +9,7 @@ import '@splidejs/react-splide/css';
 // // or only core styles
 // import '@splidejs/react-splide/css/core';
 //Custom Styled Components
+import { Link } from 'react-router-dom';
 import { Wrapper , Card , Gradient } from '../styled/Styled';
 const Veggie = () => {
     const [veggies , setVeggies] = useState([]);
@@ -52,11 +53,14 @@ const Veggie = () => {
             return (  
               <SplideSlide 
               key={veggie.id}>
-                <Card >
-                  <Gradient />                  
-                  <p>{veggie.title}</p>
-                  <img src={veggie.image} alt={veggie.title}></img>
-                </Card>
+              <Link to={"/recipe/" + veggie.id}>
+
+                    <Card >
+                    <Gradient />                  
+                    <p>{veggie.title}</p>
+                    <img src={veggie.image} alt={veggie.title}></img>
+                    </Card>
+                </Link>
               </SplideSlide>
             );
           })}

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { useParams, Link} from 'react-router-dom'
-import { Wrapper, Card, Gradient , Grid , CardCuisine } from '../styled/Styled';
+import { Grid , CardCuisine } from '../styled/Styled';
 import { motion } from 'framer-motion';
 
 const Cuisine = () => {
@@ -33,8 +33,10 @@ const Cuisine = () => {
     {cuisine.map((item) => {
         return (
             <CardCuisine key={item.id}>
+                <Link to={'/recipe/'+ item.id}>
                 <img src={item.image} alt={item.title}/>
                 <h4>{item.title}</h4>
+                </Link>
             </CardCuisine>
         )
     })}
