@@ -1,6 +1,7 @@
 {
   "name": "recipe",
   "version": "0.1.0",
+  "homepage": ".",
   "private": true,
   "dependencies": {
     "@splidejs/react-splide": "^0.7.8",
